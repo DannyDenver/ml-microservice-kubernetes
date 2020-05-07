@@ -5,11 +5,14 @@
 
 # Step 1:
 # Create dockerpath
-# dockerpath=<your docker ID/path>
+# dockerpath=<danman28/house-cost-estimator>
 
 # Step 2:  
 # Authenticate & tag
-echo "Docker ID and Image: $dockerpath"
+echo "Docker ID and Image: danman28/house-cost-estimator"
+docker login --username=danman28 --email=danny.denver80204@gmail.com
+docker tag 6ee26cd8672c danman28/house-cost-estimator:firsttry
 
 # Step 3:
 # Push image to a docker repository
+docker push danman28/house-cost-estimator:firsttry

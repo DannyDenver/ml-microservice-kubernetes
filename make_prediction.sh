@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-PORT=8000
+PORT=8080
 echo "Port: $PORT"
 
 # POST method predict
@@ -11,7 +11,7 @@ curl -d '{
    "RM":{  
       "0":6.575
    },
-   "TAX":{  
+"TAX":{  
       "0":296.0
    },
    "PTRATIO":{  
